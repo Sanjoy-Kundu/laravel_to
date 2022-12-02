@@ -76,6 +76,7 @@
                     <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                         <a href="{{ url('product/alldelete') }}" class="btn btn-danger">Delete All</a>
                         <a href="{{ url('product/restore') }}" class="btn btn-warning">Make All Restore</a>
+                        <a href="{{ url('product/permanent/delete') }}" class="btn btn-warning">Permanent Delete</a>
                     </div>
                 </div>
 

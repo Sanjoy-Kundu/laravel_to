@@ -35,13 +35,16 @@ class FrontendController extends Controller
         return back();
     }
 
-    //finally remove form database
- /*    function alldelete(){
-        Product::withTrashed()->forceDelete();
-        return back();
-    } */
+
       function alldelete(){
         Product::onlyTrashed()->forceDelete();
         return back();
     }
+
+      //finally remove form database
+      function permanent(){
+        Product::withTrashed()->forceDelete();
+        return back();
+    }
+
 }

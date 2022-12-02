@@ -20,6 +20,7 @@ Route::post('product/insert', [FrontendController::class, 'insert']);
 Route::get('product/delete/{product_id}', [FrontendController::class, 'delete']);
 Route::get('product/alldelete', [FrontendController::class, 'alldelete']);
 Route::get('product/restore', [FrontendController::class, 'restore']);
+Route::get('product/permanent/delete', [FrontendController::class, 'permanent']);
 
 
 
